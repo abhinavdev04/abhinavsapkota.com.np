@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="style.css">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -33,6 +35,7 @@
 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item"><button id="theme-toggle" class="btn btn-sm btn-outline-light"><i class="fas fa-moon"></i></button></li>
 
 </ul>
 
@@ -44,15 +47,31 @@
 
 <div class="container text-center">
 
-<h1>Abhinav Sapkota</h1>
+<div class="profile-image-container" data-aos="fade-down" data-aos-duration="1000">
+<img src="https://via.placeholder.com/200?text=Abhinav" alt="Abhinav Sapkota" class="profile-image">
+</div>
 
-<p class="lead">
-BCA Student | Aspiring Software & Systems Developer
+<h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Abhinav Sapkota</h1>
+
+<p class="lead" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+BCA Student | Software & Systems Developer
 </p>
 
-<a href="#contact" class="btn btn-primary btn-lg mt-3">
-Contact Me
+<div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+<a href="#contact" class="btn btn-primary btn-lg mt-3 me-2">
+<i class="fas fa-envelope"></i> Contact Me
 </a>
+<a href="#cv" class="btn btn-light btn-lg mt-3">
+<i class="fas fa-file-pdf"></i> Download CV
+</a>
+</div>
+
+<div class="social-hero mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+<a href="https://linkedin.com/in/abhinavsapkota" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+<a href="https://github.com/abhinavsapkota" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+<a href="https://twitter.com/abhinavsapkota" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+<a href="https://instagram.com/abhinavsapkota" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+</div>
 
 </div>
 
@@ -62,19 +81,26 @@ Contact Me
 
 <div class="container">
 
-<h2>About Me</h2>
+<h2 data-aos="fade-up">About Me</h2>
 
+<div class="row align-items-center">
+<div class="col-lg-6" data-aos="fade-right">
+<img src="https://via.placeholder.com/400x300?text=About+Me" alt="About" class="img-fluid rounded-3 shadow">
+</div>
+<div class="col-lg-6" data-aos="fade-left">
 <p>
-I am a BCA student at Tribhuvan University with a strong academic record and a passion for technology and problem solving. I enjoy building practical projects involving programming, system automation, and embedded devices.
+I am a Bachelor of Computer Applications (BCA) student at Tribhuvan University with a strong academic record and a passion for technology, programming, and practical problem solving.
 </p>
 
 <p>
-My interests include software development, low-level programming in C, Android system automation, and DIY electronics projects. I like exploring how software interacts with hardware and building tools that solve real-world problems.
+I enjoy building real-world projects involving software development, automation, and hardware integration. My interests include low-level programming in C, system automation, Python scripting, and embedded electronics projects.
 </p>
 
 <p>
-I am currently focused on developing strong programming fundamentals and expanding my skills in modern software development technologies.
+I like exploring how software interacts with hardware and creating tools that automate tasks or solve real-world problems. I am currently focused on strengthening my programming fundamentals while expanding into modern software development technologies.
 </p>
+</div>
+</div>
 
 </div>
 
@@ -84,43 +110,112 @@ I am currently focused on developing strong programming fundamentals and expandi
 
 <div class="container">
 
-<h2>Skills</h2>
+<h2 data-aos="fade-up">Skills & Technologies</h2>
 
 <div class="row">
 
-<div class="col-md-6">
-<h5>Programming</h5>
-<ul>
-<li>C Programming</li>
-<li>Java (OOP)</li>
-<li>PHP</li>
-<li>HTML / CSS</li>
-<li>JavaScript</li>
-<li>Python</li>
-<li>C#</li>
-</ul>
+<div class="col-lg-6" data-aos="fade-right">
+<h5 class="mb-4"><i class="fas fa-code"></i> Programming Languages</h5>
+
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-2">
+<label>C Programming</label>
+<span class="skill-badge">85%</span>
+</div>
+<div class="progress">
+<div class="progress-bar" style="width: 85%"></div>
+</div>
 </div>
 
-<div class="col-md-6">
-<h5>Technologies & Tools</h5>
-<ul>
-<li>Git & GitHub</li>
-<li>Linux / Command Line</li>
-<li>ADB (Android Debug Bridge)</li>
-<li>Tasker Automation</li>
-<li>MySQL</li>
-</ul>
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-2">
+<label>Python</label>
+<span class="skill-badge">80%</span>
+</div>
+<div class="progress">
+<div class="progress-bar" style="width: 80%"></div>
+</div>
 </div>
 
-<div class="col-md-6" style="margin-top: 20px;">
-<h5>Technical Skills</h5>
-<ul>
-<li>Android System Customization</li>
-<li>Rooted Android Automation</li>
-<li>Basic Embedded / Electronics Prototyping</li>
-<li>Hardware Troubleshooting</li>
-<li>PC Building and System Configuration</li>
-</ul>
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-2">
+<label>Java (OOP)</label>
+<span class="skill-badge">75%</span>
+</div>
+<div class="progress">
+<div class="progress-bar" style="width: 75%"></div>
+</div>
+</div>
+
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-2">
+<label>PHP</label>
+<span class="skill-badge">70%</span>
+</div>
+<div class="progress">
+<div class="progress-bar" style="width: 70%"></div>
+</div>
+</div>
+
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-2">
+<label>HTML</label>
+<span class="skill-badge">85%</span>
+</div>
+<div class="progress">
+<div class="progress-bar" style="width: 85%"></div>
+</div>
+</div>
+
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-2">
+<label>CSS</label>
+<span class="skill-badge">85%</span>
+</div>
+<div class="progress">
+<div class="progress-bar" style="width: 85%"></div>
+</div>
+</div>
+
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-2">
+<label>JavaScript</label>
+<span class="skill-badge">75%</span>
+</div>
+<div class="progress">
+<div class="progress-bar" style="width: 75%"></div>
+</div>
+</div>
+
+</div>
+
+<div class="col-lg-6" data-aos="fade-left">
+<h5 class="mb-4"><i class="fas fa-tools"></i> Technologies & Tools</h5>
+
+<div class="tech-icons-section">
+<div class="tech-icon" title="Git & GitHub"><i class="fab fa-github"></i><span>GitHub</span></div>
+<div class="tech-icon" title="Linux"><i class="fab fa-linux"></i><span>Linux</span></div>
+<div class="tech-icon" title="Android"><i class="fab fa-android"></i><span>Android</span></div>
+<div class="tech-icon" title="Python"><i class="fab fa-python"></i><span>Python</span></div>
+<div class="tech-icon" title="MySQL"><i class="fas fa-database"></i><span>MySQL</span></div>
+<div class="tech-icon" title="Tasker"><i class="fas fa-tasks"></i><span>Tasker</span></div>
+<div class="tech-icon" title="ADB"><i class="fab fa-android"></i><span>ADB</span></div>
+<div class="tech-icon" title="Git"><i class="fab fa-git-alt"></i><span>Git</span></div>
+</div>
+
+<h5 class="mt-5 mb-4"><i class="fas fa-cog"></i> Technical Specializations</h5>
+
+<div class="skill-tag-container">
+<span class="skill-tag">Android Customization</span>
+<span class="skill-tag">Web Scraping</span>
+<span class="skill-tag">Automation Scripts</span>
+<span class="skill-tag">Embedded Systems</span>
+<span class="skill-tag">Linux/CLI</span>
+<span class="skill-tag">Hardware Troubleshooting</span>
+<span class="skill-tag">PC Building</span>
+<span class="skill-tag">Rooted Android</span>
+</div>
+
 </div>
 
 </div>
@@ -133,62 +228,86 @@ I am currently focused on developing strong programming fundamentals and expandi
 
 <div class="container">
 
-<h2>Projects</h2>
+<h2 data-aos="fade-up">Projects</h2>
 
 <div class="row">
 
-<div class="col-md-6" style="margin-bottom: 20px;">
+<div class="col-md-6" style="margin-bottom: 20px;" data-aos="fade-up" data-aos-delay="100">
 <div class="card">
 <div class="card-body">
+<div class="project-icon"><i class="fab fa-youtube" style="color: #ff0000;"></i></div>
+<h5>Automated Meme YouTube Channel (Python Bot)</h5>
+<p>
+Created an automated Python-based system that scrapes memes from Reddit, generates video compilations, and uploads them automatically to YouTube.
+</p>
+<strong>Channel Stats:</strong>
+<ul style="font-size: 0.9em; margin-bottom: 10px;">
+<li><strong>1.86K</strong> Subscribers</li>
+<li><strong>1,100+</strong> Videos</li>
+<li><strong>1.38M+</strong> Total Views</li>
+<li>Created December 2021</li>
+</ul>
+<strong>Tech:</strong> <span class="badge bg-primary">Python</span> <span class="badge bg-primary">Reddit API</span> <span class="badge bg-primary">Web Scraping</span> <span class="badge bg-primary">Video Processing</span>
+<p style="margin-top: 1rem; font-size: 0.9em;"><a href="https://www.youtube.com/@memegeneration1233" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-youtube"></i> View Channel</a></p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6" style="margin-bottom: 20px;" data-aos="fade-up" data-aos-delay="150">
+<div class="card">
+<div class="card-body">
+<div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
 <h5>Android Anti-Theft Tracker</h5>
 <p>
-Built a stealth GPS tracking system using a rooted Android device and Tasker automation.
+Developed a stealth GPS tracking system using a rooted Android device and automation tools to monitor and control a motorcycle remotely.
 </p>
 <strong>Key Features:</strong>
 <ul style="font-size: 0.9em; margin-bottom: 10px;">
-<li>Telegram bot control system</li>
-<li>Remote GPS tracking command</li>
+<li>Telegram bot command system</li>
+<li>Remote GPS tracking</li>
 <li>Geofence alerts</li>
-<li>Stealth mode operation</li>
+<li>Remote phone ringing</li>
 </ul>
-<strong>Tech:</strong> Tasker, Telegram Bot API, Android Automation
+<strong>Tech:</strong> <span class="badge bg-primary">Tasker</span> <span class="badge bg-primary">Telegram Bot</span> <span class="badge bg-primary">Android Automation</span>
 </div>
 </div>
 </div>
 
-
-<div class="col-md-6" style="margin-bottom: 20px;">
+<div class="col-md-6" style="margin-bottom: 20px;" data-aos="fade-up" data-aos-delay="200">
 <div class="card">
 <div class="card-body">
+<div class="project-icon"><i class="fas fa-globe"></i></div>
 <h5>Personal Portfolio Website</h5>
 <p>
-Built a personal website hosted on GitHub Pages to showcase projects and skills.
+Created a responsive portfolio website hosted using GitHub Pages to showcase personal projects, skills, and academic work.
 </p>
 <strong>Key Features:</strong>
 <ul style="font-size: 0.9em; margin-bottom: 10px;">
+<li>Resume-style layout</li>
 <li>Responsive design</li>
 <li>Project showcase</li>
-<li>Contact integration</li>
+<li>Dark/Light mode</li>
 </ul>
-<strong>Tech:</strong> HTML, CSS, JavaScript, GitHub Pages
+<strong>Tech:</strong> <span class="badge bg-primary">HTML</span> <span class="badge bg-primary">CSS</span> <span class="badge bg-primary">JavaScript</span> <span class="badge bg-primary">GitHub Pages</span>
 </div>
 </div>
 </div>
 
-<div class="col-md-6" style="margin-bottom: 20px;">
+<div class="col-md-6" style="margin-bottom: 20px;" data-aos="fade-up" data-aos-delay="250">
 <div class="card">
 <div class="card-body">
+<div class="project-icon"><i class="fas fa-microchip"></i></div>
 <h5>DIY Bluetooth Control Concept</h5>
 <p>
-Experimented with creating a Bluetooth-based  control/key system concept.
+Designed a prototype concept for a Bluetooth-based vehicle control system using a smartphone for proximity-based activation.
 </p>
 <strong>Concept Features:</strong>
 <ul style="font-size: 0.9em; margin-bottom: 10px;">
-<li>Phone proximity activation</li>
+<li>Phone proximity detection</li>
 <li>Bluetooth communication</li>
 <li>Relay-based control</li>
 </ul>
-<strong>Tech:</strong> Basic Electronics, Relay Modules, Bluetooth Modules
+<strong>Tech:</strong> <span class="badge bg-primary">Electronics</span> <span class="badge bg-primary">Bluetooth</span> <span class="badge bg-primary">Relay Modules</span>
 </div>
 </div>
 </div>
@@ -203,20 +322,30 @@ Experimented with creating a Bluetooth-based  control/key system concept.
 
 <div class="container">
 
-<h2>Experience</h2>
+<h2 data-aos="fade-up">Experience</h2>
 
-<h5>Independent Technical Projects</h5>
+<div class="row" data-aos="fade-up" data-aos-delay="200">
+<div class="col-lg-8 offset-lg-2">
+<div class="experience-card">
+<div class="experience-header">
+<h5><i class="fas fa-rocket"></i> Independent Technical Projects</h5>
+<span class="experience-date">2020 - Present</span>
+</div>
 
 <p>
 Self-directed development and experimentation with programming, automation, and hardware projects.
 </p>
 
-<strong>Responsibilities:</strong>
+<strong>Key Responsibilities:</strong>
 <ul>
-<li>Designing and implementing software solutions</li>
-<li>Learning new technologies independently</li>
-<li>Building practical systems involving both software and hardware</li>
+<li><i class="fas fa-check"></i> Designing and implementing software solutions</li>
+<li><i class="fas fa-check"></i> Learning new technologies independently</li>
+<li><i class="fas fa-check"></i> Building practical systems involving both software and hardware</li>
+<li><i class="fas fa-check"></i> Problem-solving and system optimization</li>
 </ul>
+</div>
+</div>
+</div>
 
 </div>
 
@@ -226,13 +355,24 @@ Self-directed development and experimentation with programming, automation, and 
 
 <div class="container">
 
-<h2>Education</h2>
+<h2 data-aos="fade-up">Education</h2>
 
-<p>
-<strong>Bachelor of Computer Applications (BCA)</strong><br>
-Tribhuvan University, Nepal<br>
-
-</p>
+<div class="row" data-aos="fade-up" data-aos-delay="200">
+<div class="col-lg-8 offset-lg-2">
+<div class="education-card">
+<div class="education-icon">
+<i class="fas fa-graduation-cap"></i>
+</div>
+<h5>Bachelor of Computer Applications (BCA)</h5>
+<p class="education-institution">Tribhuvan University, Nepal</p>
+<div class="education-details">
+<p class="education-detail-item"><strong>Current Semester:</strong> Third Semester</p>
+<p class="education-detail-item"><strong>Academic Performance:</strong> Consistently ranked 1st in class</p>
+</div>
+<p class="education-description">Comprehensive program covering software development, system design, and computer science fundamentals.</p>
+</div>
+</div>
+</div>
 
 </div>
 
@@ -240,31 +380,68 @@ Tribhuvan University, Nepal<br>
 
 <section id="contact" class="section bg-light">
 
-<div class="container text-center">
+<div class="container">
 
-<h2>Contact</h2>
+<h2 class="text-center" data-aos="fade-up">Get In Touch</h2>
 
-<p>Email: <a href="mailto:abhinav.sapkota.dev@gmail.com">abhinav.dev04@gmail.com</a></p>
+<div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+<div class="col-lg-8">
+<div class="contact-info">
+<div class="contact-item">
+<div class="contact-icon"><i class="fas fa-envelope"></i></div>
+<h5>Email</h5>
+<p><a href="mailto:abhinav.dev04@gmail.com">abhinav.dev04@gmail.com</a></p>
+</div>
 
-<p>
-GitHub:
-<a href="https://github.com/abhinavsapkota" target="_blank">
-https://github.com/abhinavdev04
-</a>
-</p>
+<div class="contact-item">
+<div class="contact-icon"><i class="fab fa-github"></i></div>
+<h5>GitHub</h5>
+<p><a href="https://github.com/abhinavdev04" target="_blank">github.com/abhinavdev04</a></p>
+</div>
+
+<div class="contact-item">
+<div class="contact-icon"><i class="fab fa-youtube"></i></div>
+<h5>YouTube</h5>
+<p><a href="https://www.youtube.com/@memegeneration1233" target="_blank">@memegeneration1233</a></p>
+</div>
+</div>
+
+<div class="social-links text-center mt-5">
+<h5 class="mb-4">Follow Me</h5>
+<a href="https://linkedin.com/in/abhinavsapkota" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+<a href="https://github.com/abhinavsapkota" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+<a href="https://twitter.com/abhinavsapkota" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+<a href="https://instagram.com/abhinavsapkota" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
 
 </div>
 
 </section>
 
+<section id="cv" class="section bg-dark text-white text-center" data-aos="fade-up">
+<div class="container">
+<h4>Want to learn more?</h4>
+<p class="lead mb-4">Download my resume to see my complete background and experience.</p>
+<a href="#" class="btn btn-light btn-lg"><i class="fas fa-file-pdf"></i> Download My CV</a>
+</div>
+</section>
+
 <footer>
-
-<p>© 2026 Abhinav Sapkota</p>
-
+<div class="container text-center">
+<div class="social-footer mb-3">
+<a href="https://linkedin.com/in/abhinavsapkota" target="_blank" class="footer-social"><i class="fab fa-linkedin"></i></a>
+<a href="https://github.com/abhinavsapkota" target="_blank" class="footer-social"><i class="fab fa-github"></i></a>
+<a href="https://twitter.com/abhinavsapkota" target="_blank" class="footer-social"><i class="fab fa-twitter"></i></a>
+<a href="https://instagram.com/abhinavsapkota" target="_blank" class="footer-social"><i class="fab fa-instagram"></i></a>
+</div>
+<p>© 2026 Abhinav Sapkota. All rights reserved.</p>
+</div>
 </footer>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="script.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
